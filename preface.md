@@ -40,7 +40,9 @@ R的基础图形系统基本上是一个“纸笔模型”，即：一块画布�
 
 在听说我们翻译完这本书之后Hadley很高兴，给我们发邮件说：
 
-> Hadley's words here.
+> I am excited and honoured to have my book translated to Chinese. `ggplot2` has become far more popular than I ever imagined, and I'm excited that this translation will allow many more people to learn `ggplot2`. I'm very grateful that Yihui and his team of translators (Nan Xiao, Tao Gao, Yixuan Qiu, Weicheng Zhu, Taiyun Wei and Lanfeng Pan) made this possible.
+
+> One of the biggest improvements to `ggplot2` since the book was first written is the `ggplot2` mailing list. This is a very friendly environment where you can get help with your visualisations, and improve your own knowledge of `ggplot2` by helping others solve their problems. I'd strongly encourage you to join the mailing list, even if you think your English is not very good -- we are very friendly people.
 
 我们感谢这本书的译者，包括肖楠（第1、2章，邱怡轩审校）、高涛（第3、4章，主伟呈审校）、邱怡轩（第5、6章，肖楠审校）、主伟呈（第7、8章，高涛审校）、魏太云（第9、10章，潘岚锋、韩帅审校）和潘岚锋（附录，魏太云审校）。所有译者均来自于统计之都（<http://cos.name>）。我们还要感谢三位参加第二次审校的朋友：肖凯（第1-4章）、殷腾飞（第5-7章）和余光创（第8-10章、附录）。
 
