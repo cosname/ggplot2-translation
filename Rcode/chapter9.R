@@ -193,16 +193,18 @@ full + aes(displ, colour = factor(cyl))
 
 ## 把本书作者Hadley的图像放在图中。
 fortify.Image <- function(model, data, ...) {
-    colours <- channel(model, "x11")[, , ]
-    colours <- colours[, rev(seq_len(ncol(colours)))]
-    melt(colours, c("x", "y"))
+  colours <- channel(model, "x11")
+  colours <- colours[, rev(seq_len(ncol(colours)))]
+  melt(colours, c("x", "y"))
 }
+## 安装EBImage包：
+## source("http://bioconductor.org/biocLite.R") 
+## biocLite("EBImage")
 
-## 安装加载EBImage
-source("http://bioconductor.org/biocLite.R")
-biocLite("EBImage")
 library(EBImage)
+library(reshape2)
+library(ggplot2)
+img <- readImage("http://had.co.nz/me.jpg")
 
-img <- readImage("http://had.co.nz/me.jpg", TrueColor)
-qplot(x, y, data = img, fill = value, geom = "tile") + scale_fill_identity() + 
-    coord_equal() 
+qplot(x, y, data = img, fill = value, geom="tile") +
+  scale_fill_identity() + coord_equal()  
