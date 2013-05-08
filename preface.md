@@ -20,7 +20,7 @@ R的基础图形系统基本上是一个“纸笔模型”，即：一块画布�
 
 `ggplot2`是Hadley在爱荷华州立大学博士期间的作品，也是他博士论文的主题之一，实际上`ggplot2`还有个前身`ggplot`，但后来废弃了，某种程度上这也是Hadley写软件的特征，熟悉他的人就知道这不是他第一个“2”版本的包了（还有`reshape2`）。带2的包和原来的包在语法上会有很大的改动，基本上不兼容。尽管如此，他的R代码风格在R社区可谓独树一帜，尤其是他的代码结构很好，可读性很高，`ggplot2`是R代码抽象的一个杰作。读者若感兴趣，可以在GitHub网站上浏览他的包：<https://github.com/hadley>。在用法方面，`ggplot2`也开创了一种奇特而绝妙的语法，那就是加号：一幅图形从背后的设计来说，是若干图形语法的叠加，从外在的代码来看，也是若干R对象的相加。这一点精妙尽管只是`ggplot2`系统的很小一部分，但我个人认为没有任何程序语言可比拟，它对作为泛型函数的加号的扩展只能用两个字形容：绝了。
 
-至2013年2月26日，`ggplot2`的[邮件列表](http://groups.google.com/group/ggplot2)订阅成员已达3394人，邮件总数为15185封，已经成为一个丰富、活跃的用户社区。未来`ggplot2`的发展也将越来越依赖于用户的贡献，这也是很多开源软件最终的走向。
+至2013年2月26日，`ggplot2`的邮件列表（http://groups.google.com/group/ggplot2 ）订阅成员已达3394人，邮件总数为15185封，已经成为一个丰富、活跃的用户社区。未来`ggplot2`的发展也将越来越依赖于用户的贡献，这也是很多开源软件最终的走向。
 
 ## 关于版本更新
 
@@ -40,7 +40,7 @@ R的基础图形系统基本上是一个“纸笔模型”，即：一块画布�
 
 0.9.1版本主要解决了0.9.0版本中的一些漏洞。`ggplot2`在2012年9月4日发布了新的版本0.9.2，其中一些特性和更新有必要提及：
 
-- 采用了全新的主题（theme）系统，`opts()`函数已被标记为“不推荐使用”（deprecated），将在未来版本中被取消，取而代之的是`theme()`函数，主题元素（theme element）由属性列表构成，支持继承，主题之间可以直接进行合并等操作。详情参见wiki页面：(https://github.com/wch/ggplot2/wiki/New-theme-system)。
+- 采用了全新的主题（theme）系统，`opts()`函数已被标记为“不推荐使用”（deprecated），将在未来版本中被取消，取而代之的是`theme()`函数，主题元素（theme element）由属性列表构成，支持继承，主题之间可以直接进行合并等操作。详情参见wiki页面：https://github.com/wch/ggplot2/wiki/New-theme-system 。
 - 依赖于新的`gtable`包。 用来更方便地调整修改`ggplot2`图形中的图元，`ggplotGrob()`会返回一个`gtable`类，这个对象可以利用`gtable`包中提供的函数和接口进行操作。
 - 所有“模板”类型的图形函数，比如`plotmatrix()`，`ggorder()`等等，已被标记为“不推荐使用”（deprecated），将在未来版本中取消。
 
@@ -62,7 +62,7 @@ R的基础图形系统基本上是一个“纸笔模型”，即：一块画布�
 
 > One of the biggest improvements to `ggplot2` since the book was first written is the `ggplot2` mailing list. This is a very friendly environment where you can get help with your visualisations, and improve your own knowledge of `ggplot2` by helping others solve their problems. I'd strongly encourage you to join the mailing list, even if you think your English is not very good -- we are very friendly people.
 
-我们感谢这本书的译者，包括邱怡轩(第1~2章)、主伟呈(第3~4章)、肖楠(第5~6章)、高涛(第7~8章)、潘岚锋(第9章)、魏太云(第10章、附录以及翻译过程的协调安排和全书的LaTeX排版工作)。所有译者均来自于统计之都(http://cos.name)。
+我们感谢这本书的译者，包括邱怡轩（第1~2章）、主伟呈（第3~4章）、肖楠（第5~6章）、高涛（第7~8章）、潘岚锋（第9章）、魏太云（第10章、附录以及翻译过程的协调安排和全书的LaTeX排版工作）。所有译者均来自于统计之都（http://cos.name ）。
 
 爱荷华州立大学的殷腾飞博士、中国人民大学统计学院的孟生旺教授、浙江大学的张政同学通读了译稿，提出了很多有用的建议，殷腾飞博士还提供了大多数新版本中的解决方案，并担任本书的审校。肖凯老师和余光创博士分别对第1~4章、第8~10章以及附录提出了很多修改意见，此外，中国人民大学的陈妍、李晓矛、谢漫锜三位同学、中国再保险公司的李皞先生、百度公司的韩帅先生、eBay公司的陈丽云女士、Mango Solutions公司的李舰先生、京东商城的刘思喆先生、首钢总公司的邓一硕先生、新华社的陈堰平先生在此书的翻译过程中也曾提过不少宝贵的建议，在此一并表示感谢。
 
